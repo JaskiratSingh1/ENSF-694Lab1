@@ -36,11 +36,20 @@ int main(void)
     exit(1);
   }
   
-  cout << "Doing conversion for input of " <<  millisec <<" milliseconds ... \n", millisec;
+  cout << "Doing conversion for input of " <<  millisec <<" milliseconds ... \n";
 
   /* MAKE A CALL TO time_convert HERE. */
+  time_convert(millisec, &minutes, &seconds);
+    
   cout << "That is equivalent to " << minutes << " minute(s) and " << seconds << " second(s).\n";
   return 0;
 }
 
 /* PUT YOUR FUNCTION DEFINITION FOR time_convert HERE. */
+void time_convert(int ms_time, int *minutes_ptr, double *seconds_ptr) {
+    //Populate seconds variable and minutes variable by reference
+    *seconds_ptr = ms_time / 1000;
+    *minutes_ptr = *seconds_ptr / 60;
+    //Reduce the seconds variable to subtract the minutes contained in minutes variable
+    *seconds_ptr = fmod(*seconds_ptr, 60);
+}

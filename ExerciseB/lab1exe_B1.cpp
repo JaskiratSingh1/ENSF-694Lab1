@@ -24,7 +24,9 @@ void foo(int *a, int *b)
   *a += 10;
   *b += 20;
  
-  /* point one */
+  // point one
 
   *b += 1;
 }
+
+//Output: x is 1021, y is 2010.

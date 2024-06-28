@@ -6,6 +6,7 @@
  *  Submission date
  */
 
+//Lines starting with # are a pre-processor directive
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -42,12 +43,35 @@ int main(void)
         }
     }
     
+    create_table(velocity);
+    
+    
     return 0;
 }
-/*
+
 void create_table(double v) {
-    for(int deg = 0; deg <=90; deg += 5) {
-        
+    //Print header elements and units
+    cout << "Angle \t t \t d" << endl;
+    cout << "(deg) \t (sec) \t (m)" << endl;
+    
+    //Calculate and print variable values
+    for(double deg = 0; deg <= 90; deg += 5) {
+        cout << deg;
+        cout << " \t ";
+        cout << Projectile_travel_time(deg, v);
+        cout << " \t ";
+        cout << Projectile_travel_distance(deg, v) << endl;
     }
 }
-*/
+
+double Projectile_travel_time(double a, double v) {
+    return 2 * v * sin(degree_to_radian(a)) / G;
+}
+
+double Projectile_travel_distance(double a, double v) {
+    return v * v * sin(2 * degree_to_radian(a)) / G;
+}
+
+double degree_to_radian(double d) {
+    return d * PI / 180;
+}

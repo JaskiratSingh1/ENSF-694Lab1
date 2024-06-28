@@ -18,6 +18,7 @@ void good_copy(double *dest, double *source, int n);
  * PROMISES: copies the values in each element of array source to the corresponding element
  * in array dest.
  */
+
 int main(void)
 {
     double sum = 0;
@@ -83,11 +84,17 @@ double add_them (double arg[5])
 
 void good_copy(double *dest, double *source, int n)
 {
-    // mising code -- students must complete the implementation of this funcion.
+    for(int i = 0; i < n; i++) {
+        dest[i] = source[i];
+    }
 }
-
 
 void print_matrix(double matrix[][COL_SIZE], int rows)
 {
-    // mising code -- students must complete the implementation of this funcion.
+    for(int i = 0; i < rows; i++) {
+        for(int j = 0; j < COL_SIZE; j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << "\n";
+    }
 }

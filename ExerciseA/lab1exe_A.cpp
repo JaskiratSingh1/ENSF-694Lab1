@@ -3,7 +3,7 @@
  *  ENSF 694 Lab 1, exercise A
  *  Created by Mahmood Moussavi
  *  Completed by: Jaskirat Singh
- *  Submission date
+ *  Submission date: July 3
  */
 
 //Lines starting with # are a pre-processor directive

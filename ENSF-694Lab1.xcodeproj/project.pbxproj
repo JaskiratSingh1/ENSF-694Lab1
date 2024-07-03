@@ -84,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D476BB12C2EFF8A00DF7147 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		6000A1CE2C2C68BD00EF119A /* MyArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyArray.h; sourceTree = "<group>"; };
 		6000A1D32C2C6AD100EF119A /* ExerciseA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExerciseA; sourceTree = BUILT_PRODUCTS_DIR; };
 		6000A1E02C2C6B0200EF119A /* ExerciseB */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExerciseB; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +203,7 @@
 				609617742C2C61E40060C48F /* MyArray_tester.cpp */,
 				609617722C2C61E40060C48F /* MyArray.cpp */,
 				6000A1CE2C2C68BD00EF119A /* MyArray.h */,
+				2D476BB12C2EFF8A00DF7147 /* data.txt */,
 			);
 			path = MyArrayFiles;
 			sourceTree = "<group>";

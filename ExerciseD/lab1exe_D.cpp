@@ -1,3 +1,10 @@
+/*
+ *  lab1exe_D.cpp
+ *  ENSF 694 Lab 1, exercise D
+ *  Completed by: Jaskirat Singh
+ *  Submission date: July 3
+ */
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -29,20 +36,19 @@ int main(void)
     cout << " size of x in main is: " << (int) sizeof(x) << " bytes.\n";
     cout << " y has " << (int) (sizeof(y)/ sizeof(double)) << " elements and its size is: " <<  (int) sizeof(y) << " bytes.\n";
     cout << " matrix has " << (int) (sizeof(matrix)/ sizeof(double)) << " elements and its size is: " <<  (int) sizeof(matrix) << " bytes.\n";
-    
     try_to_copy(x, y);
     try_to_change(x);
-    
+
     sum = add_them(&y[1]);
     cout << "\n sum of values in y[1], y[2] and y[3] is: " << sum << endl;
     
     good_copy(x, y, 4);
    
     cout << "\nThe values in array x after call to good_copy are expected to be:";
-    cout << "\n2.30, 1.20, 2.20, 4.10\n";
+    cout << "\n2.30, -8.25, 2.20, 4.10\n";
     cout << "And the values are:\n";
     for(int i = 0; i < 4; i++)
-        cout << setprecision(2) << x[i] << "  ";
+        cout << fixed << setprecision(2) << x[i] << "  ";
     
     cout << "\nThe values in matrix are:\n";
     print_matrix(matrix, 3);
@@ -55,7 +61,6 @@ int main(void)
 void try_to_copy(double dest[], double source[])
 {
     dest = source;
-    
     /* point one*/
     
     return;

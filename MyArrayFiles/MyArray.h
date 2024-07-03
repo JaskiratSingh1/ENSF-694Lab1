@@ -86,4 +86,10 @@ int count(MyArray* myArray, int obj );
  * REQUIRES: pointer myArray points to an object of struct MyArray.
  * PROMISES: returns the count of elements of myArray->array that their value is equal to obj.
  */
+
+int remove_all(MyArray* myArray, int value );
+/*
+ * PROMISES: Remove all instances of value.
+ */
+
 #endif

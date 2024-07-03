@@ -10,7 +10,7 @@ using namespace std;
 
 MyArray* run_test();
 int main( void ) {
-    freopen("/Users/mahmoodmoussavi/Dropbox/Labs/Lab1/MyArray Procedural/MyArray Procedural/data.txt", "r", stdin);
+    freopen("/Users/aether/Documents/ENSF-694/ENSF-694Lab1/MyArrayFiles/data.txt", "r", stdin);
     
     cout << "Starting Test Run. Using input file." <<  endl;
     // testing functions that use MyArray objects

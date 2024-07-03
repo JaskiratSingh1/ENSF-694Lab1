@@ -16,11 +16,12 @@ int what(const int *a, int n)
     if (*p > *max)
       max = p;
   }
+    //cout << max << endl;
   for (q = a + n - 1; q != a; q--) {
     if (q[-1] < *min)
       min = q - 1;
   }
-
+    //cout << min << endl;
   // point one (after the 2nd loop has finished)
 
   return min - max;

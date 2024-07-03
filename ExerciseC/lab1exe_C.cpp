@@ -1,7 +1,8 @@
- /*
+/*
  *  lab1exe_C.cpp
- *  ENSF 694 Lab 1 Exercise D
- *
+ *  ENSF 694 Lab 1, exercise C
+ *  Completed by: Jaskirat Singh
+ *  Submission date: July 3
  */
 
 #include <iostream>
